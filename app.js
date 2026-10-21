@@ -1,8 +1,8 @@
 /* NightNote: vanilla JavaScript + Supabase Auth/PostgreSQL.
    Add your Supabase Project URL and anon/publishable key below.
    Never put a service_role/secret key in browser code. */
-const SUPABASE_URL = 'YOUR_SUPABASE_PROJECT_URL';
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_OR_PUBLISHABLE_KEY';
+const SUPABASE_URL = 'https://tnkimfnmwtakfshuuied.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_UQSyjNEJuQm6v0rl_bCRLA_BvGEG0KX';
 
 const hasSupabaseConfig = SUPABASE_URL.startsWith('https://') && !SUPABASE_URL.includes('YOUR_') && SUPABASE_ANON_KEY && !SUPABASE_ANON_KEY.includes('YOUR_');
 const supabase = (window.supabase && hasSupabaseConfig)
